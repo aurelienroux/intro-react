@@ -11,6 +11,7 @@ import Layout from "./Layout.js"
 import GuessTheNumber from "./GuessTheNumber.js"
 import ClickBtn from "./YouClicked.js"
 import CharacCount from "./CharacterCounter.js"
+import CharacLim from "./CharacterLimit.js"
 
 class App extends Component {
   render() {
@@ -53,6 +54,11 @@ class App extends Component {
         <div>
           <h2>Character Counter</h2>
           <CharacCount />
+          <hr/>
+        </div>
+        <div>
+          <h2>Character Limit</h2>
+          <CharacLim limit={30}/>
           <hr/>
         </div>
       </div>
