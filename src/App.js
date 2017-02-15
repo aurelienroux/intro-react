@@ -7,6 +7,8 @@ var imageList = [
   {id: 43, source: "https://facebook.github.io/react/img/logo.svg", text: "React Logo"},
   {id: 44, source: "https://media.giphy.com/media/EldfH1VJdbrwY/giphy.gif", text: "Mind Blown!"}
 ];
+import Layout from "./Layout.js"
+
 
 class App extends Component {
   render() {
@@ -26,6 +28,13 @@ class App extends Component {
           {
             imageList.map( (ele, i) => <ImgCap key={i} source={ele.source} alt={ele.text} text={ele.text}/> )
           }
+          <hr/>
+        </div>
+        <div>
+          <Layout>
+            <h2>About Us</h2>
+            <p>We are <a href="https://facebook.github.io/react/" target="_blank">React</a> developers</p>
+          </Layout>
           <hr/>
         </div>
       </div>

@@ -3,14 +3,14 @@ import React from 'react';
 class Layout extends React.Component {
   render() {
     return (
-      <div class="layout">
-        <nav class="main-nav">
+      <div className="layout">
+        <nav className="main-nav">
           <ul>
             <li><a href="/">Home</a></li>
           </ul>
         </nav>
         <main>
-          <!-- the varying content should go here -->
+          {this.props.children}
         </main>
         <footer>
           Copywhat 2016 Kittens
