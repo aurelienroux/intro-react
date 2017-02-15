@@ -8,7 +8,7 @@ var imageList = [
   {id: 44, source: "https://media.giphy.com/media/EldfH1VJdbrwY/giphy.gif", text: "Mind Blown!"}
 ];
 import Layout from "./Layout.js"
-
+import GuessTheNumber from "./GuessTheNumber.js"
 
 class App extends Component {
   render() {
@@ -35,6 +35,10 @@ class App extends Component {
             <h2>About Us</h2>
             <p>We are <a href="https://facebook.github.io/react/" target="_blank">React</a> developers</p>
           </Layout>
+          <hr/>
+        </div>
+        <div>
+          <GuessTheNumber />
           <hr/>
         </div>
       </div>
