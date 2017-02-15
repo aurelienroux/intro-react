@@ -21,19 +21,19 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React Intro Workshop</h2>
         </div>
-        <div>
+        <div>// Image Caption /////////////////////
           <h2>Testing Image Caption</h2>
           <ImgCap source="http://i.imgur.com/D8JWn.jpg" text="Weird Cat!"/>
           <hr/>
         </div>
-        <div>
+        <div>// List of Items /////////////////////
           <h2>List of Items</h2>
           {
             imageList.map( (ele, i) => <ImgCap key={i} source={ele.source} alt={ele.text} text={ele.text}/> )
           }
           <hr/>
         </div>
-        <div>
+        <div>// Layout /////////////////////
           <h2>Layout</h2>
           <Layout>
             <h3>About Us</h3>
@@ -41,22 +41,22 @@ class App extends Component {
           </Layout>
           <hr/>
         </div>
-        <div>
+        <div>// Guessing number /////////////////////
           <h2>Guess The Number Game</h2>
           <GuessTheNumber number={50} />
           <hr/>
         </div>
-        <div>
+        <div>// Clicking button /////////////////////
           <h2>You Clicked</h2>
           <ClickBtn />
           <hr/>
-        </div>
-        <div>
+        </div>  
+        <div>// Character Counter /////////////////////
           <h2>Character Counter</h2>
           <CharacCount />
           <hr/>
         </div>
-        <div>
+        <div>// Character limit /////////////////////
           <h2>Character Limit</h2>
           <CharacLim limit={30}/>
           <hr/>
