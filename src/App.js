@@ -31,10 +31,16 @@ class App extends Component {
           <hr/>
         </div>
         <div>
+          <h2>Layout</h2>
           <Layout>
-            <h2>About Us</h2>
+            <h3>About Us</h3>
             <p>We are <a href="https://facebook.github.io/react/" target="_blank">React</a> developers</p>
           </Layout>
+          <hr/>
+        </div>
+        <div>
+          <h2>Guess The Number Game</h2>
+          <GuessTheNumber number={50} />
           <hr/>
         </div>
         <div>
