@@ -10,6 +10,7 @@ var imageList = [
 import Layout from "./Layout.js"
 import GuessTheNumber from "./GuessTheNumber.js"
 import ClickBtn from "./YouClicked.js"
+import CharacCount from "./CharacterCounter.js"
 
 class App extends Component {
   render() {
@@ -47,6 +48,11 @@ class App extends Component {
         <div>
           <h2>You Clicked</h2>
           <ClickBtn />
+          <hr/>
+        </div>
+        <div>
+          <h2>Character Counter</h2>
+          <CharacCount />
           <hr/>
         </div>
       </div>
