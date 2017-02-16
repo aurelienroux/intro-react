@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ImgCap from "./ImageCaption.js"
+
 var imageList = [
   {id: 42, source: "http://placekitten.com/g/210/210", text: "Hello kittenz!"},
   {id: 43, source: "https://facebook.github.io/react/img/logo.svg", text: "React Logo"},
   {id: 44, source: "https://media.giphy.com/media/EldfH1VJdbrwY/giphy.gif", text: "Mind Blown!"}
 ];
+
+import ImgCap from "./ImageCaption.js"
 import Layout from "./Layout.js"
 import GuessTheNumber from "./GuessTheNumber.js"
 import ClickBtn from "./YouClicked.js"
@@ -32,7 +34,7 @@ class App extends Component {
         <div>
           <h2>List of Items</h2>
           {
-            imageList.map( (ele, i) => <ImgCap key={i} source={ele.source} alt={ele.text} text={ele.text}/> )
+            imageList.map( (ele, i) => <ImgCap key={ele.id} source={ele.source} alt={ele.text} text={ele.text}/> )
           }
           <hr/>
         </div>
@@ -69,7 +71,7 @@ class App extends Component {
           <CharacLim limit={30}/>
           <hr/>
         </div>
-        
+
       </div>
     );
   }

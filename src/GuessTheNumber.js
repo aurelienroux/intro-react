@@ -1,6 +1,7 @@
 import React from 'react';
 
 class GuessTheNumber extends React.Component {
+  
   handleButtonClick = () => {
     if(this.props.number > this.refs.userGuess.value){
       alert("Too low")
