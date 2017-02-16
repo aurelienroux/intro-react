@@ -9,7 +9,7 @@ class CharacLimit extends React.Component {
   }
   _handleInput = (event) => {
     var value = event.target.value;
-    if(value.length < this.props.limit){
+    if(value.length <= this.props.limit){
       this.setState({currentInput: value})
     }
   }

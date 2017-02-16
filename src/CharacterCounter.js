@@ -14,8 +14,8 @@ class CharacCount extends React.Component {
   render(){
       return(
         <div>
-          <input type="text" onInput={this._handleInput} />
-          <p>{this.state.currentInput}</p>
+          <input type="text" onInput={this._handleInput} style={{margin: 20}}/>
+          <span>{this.state.currentInput}</span>
         </div>
       )
     }
