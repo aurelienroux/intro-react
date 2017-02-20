@@ -47,6 +47,7 @@ class App extends Component {
           <Layout>
             <h3>About Us</h3>
             <p>We are <a href="https://facebook.github.io/react/" target="_blank">React</a> developers</p>
+            <span>Just another test</span>
           </Layout>
           <hr/>
         </div>
