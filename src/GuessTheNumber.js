@@ -18,7 +18,7 @@ class GuessTheNumber extends React.Component {
     return(
       <div>
         <p>Guess a number between 1 and 100</p>
-        <form onSubmit= {this.handleButtonClick}>
+        <form onSubmit={this.handleButtonClick}>
           <input type="number" ref="userGuess" />
           <input type="button" value="GUESS" />
         </form>

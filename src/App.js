@@ -15,6 +15,8 @@ import ClickBtn from "./YouClicked.js"
 import CharacCount from "./CharacterCounter.js"
 import CharacLim from "./CharacterLimit.js"
 import GuessGame from "./GuessNumberGame.js"
+import GuessStateful from "./guessNumZiad.js"
+
 
 class App extends Component {
   render() {
@@ -79,6 +81,12 @@ class App extends Component {
         <div>
           <h2>Guess Game</h2>
           <GuessGame />
+          <hr/>
+        </div>
+
+        <div>
+          <h2>Guess Game</h2>
+          <GuessStateful />
           <hr/>
         </div>
 
