@@ -35,9 +35,10 @@ class App extends Component {
 
         <div>
           <h2>List of Items</h2>
-          {
-            imageList.map( (ele, i) => <ImgCap key={ele.id} source={ele.source} alt={ele.text} text={ele.text}/> )
-          }
+            {
+              imageList.map(image =>
+                <ImgCap source={image.source} alt={image.text} text={image.text} key={image.id} /> )
+            }
           <hr/>
         </div>
 
