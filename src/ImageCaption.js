@@ -23,7 +23,7 @@ export default class ImageCaption extends Component{
   render(){
     return (
       <figure>
-        <img src={this.props.source} alt={this.props.text} />
+        <img src={this.props.source} alt={this.props.text} style={{width: 300}}/>
         <figcaption>
           { this.props.text }
         </figcaption>
