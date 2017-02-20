@@ -17,7 +17,6 @@ class ClickBtn extends React.Component {
   }
 
   _reset = () => {
-    this.setState({num: "you never clicked"})
     this.setState({reset: this.state.reset + 1})
   }
 
